@@ -1,0 +1,153 @@
+[
+  {
+    "id": "general",
+    "title": "General",
+    "icon": "bi-gear-fill",
+    "children": [
+      {
+        "id": "home",
+        "title": "Home",
+        "icon": "bi-house-fill",
+        "path": "/"
+      },
+      {
+        "id": "about",
+        "title": "About",
+        "icon": "bi-info-circle-fill",
+        "path": "/about"
+      },
+      {
+        "id": "contact",
+        "title": "Contact",
+        "icon": "bi-phone-fill",
+        "children": [
+          {
+            "id": "facebook",
+            "title": "Facebook",
+            "icon": "bi-facebook"
+          },
+          {
+            "id": "twitter",
+            "title": "Twitter",
+            "icon": "bi-twitter"
+          },
+          {
+            "id": "instagram",
+            "title": "Instagram",
+            "icon": "bi-instagram"
+          }
+        ]
+      },
+      {
+        "id": "faq",
+        "title": "FAQ",
+        "icon": "bi-question-circle-fill"
+      }
+    ]
+  },
+  {
+    "id": "account",
+    "title": "Account",
+    "icon": "bi-info-circle-fill",
+    "children": [
+      {
+        "id": "login",
+        "title": "Login",
+        "path": "/login"
+      },
+      {
+        "id": "register",
+        "title": "Register",
+        "path": "/register"
+      },
+      {
+        "id": "forgot-password",
+        "title": "Forgot Password",
+        "path": "/forgot-password"
+      },
+      {
+        "id": "reset-password",
+        "title": "Reset Password",
+        "path": "/reset-password"
+      }
+    ]
+  },
+  {
+    "id": "profile",
+    "title": "Profile",
+    "icon": "bi-person-fill",
+    "children": [
+      {
+        "id": "profile-inner",
+        "title": "Profile",
+        "path": "/profile"
+      },
+      {
+        "id": "settings",
+        "title": "Settings",
+        "children": [
+          {
+            "id": "account-settings",
+            "title": "Account",
+            "path": "/settings/account"
+          },
+          {
+            "id": "billing",
+            "title": "Billing",
+            "children": [
+              {
+                "id": "payment",
+                "title": "Payment",
+                "path": "/settings/billing/payment"
+              },
+              {
+                "id": "subscription",
+                "title": "Subscription",
+                "path": "/settings/billing/subscription"
+              }
+            ]
+          },
+          {
+            "id": "notificiations",
+            "title": "Notifications",
+            "path": "/settings/notifications"
+          }
+        ]
+      },
+      {
+        "id": "logout",
+        "title": "Logout",
+        "path": "/logout"
+      }
+    ]
+  },
+  {
+    "id": "advanced",
+    "title": "Advance",
+    "icon": "bi-view-list",
+    "children": [
+      {
+        "id": "search",
+        "title": "Search",
+        "path": "/search"
+      },
+      {
+        "id": "history",
+        "title": "History",
+        "path": "/history"
+      }
+    ]
+  },
+  {
+    "id": "support",
+    "title": "Support",
+    "icon": "bi-question-circle-fill",
+    "path": "/support"
+  },
+  {
+    "id": "report-bug",
+    "title": "Report Bug",
+    "icon": "bi-bug",
+    "path": "/report-bug"
+  }
+]

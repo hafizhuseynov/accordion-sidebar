@@ -1,0 +1,36 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+
+.main nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sidebar-show {
+  background-color: rgba(120, 120, 120, 0.1);
+  border-radius: 12px;
+  padding: 10px 14px;
+  margin: 16px 32px;
+  display: inline-block;
+  cursor: pointer;
+  /* transition: background-color 0.3s; */
+  /* position: fixed; */
+  /* top: 20px; */
+}
+
+.sidebar-show:hover {
+  background-color: rgba(120, 120, 120, 0.3);
+}
+
+.sidebar-show i {
+  font-size: 24px;
+}
+
+h1 {
+  height: 100px;
+}
