@@ -1,16 +1,17 @@
-import { useState, useEffect } from "react";
-import SidebarItem from "./SidebarItem";
+import { useEffect } from "react";
 import "./Sidebar.scss";
+import useSidebar from "../hooks/useSidebar";
 
 const Sidebar = ({ items, shown, setShown }) => {
-  const [currentlyOpen, setCurrentlyOpen] = useState(!shown && null);
-  
+  const [renderItems] = useSidebar(items, shown);
+
   useEffect(() => {
-    if (!shown) {
-      setCurrentlyOpen(null);
-      document.body.style.overflow = "auto";
-    } else {
+    if (shown) {
+      // Disable scroll
       document.body.style.overflow = "hidden";
+    } else {
+      // Enable scroll
+      document.body.style.overflow = "auto";
     }
   }, [shown]);
 
@@ -22,18 +23,7 @@ const Sidebar = ({ items, shown, setShown }) => {
       ></div>
 
       <aside className={shown ? `sidebar shown` : `sidebar `}>
-        {items &&
-          items.map((item, index) => {
-            return (
-              <SidebarItem
-                key={item.id}
-                item={item}
-                id={index}
-                isOpen={index === currentlyOpen}
-                onOpen={setCurrentlyOpen}
-              />
-            );
-          })}
+        {renderItems()}
       </aside>
     </div>
   );
